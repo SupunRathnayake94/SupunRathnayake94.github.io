@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table, th, td {
+      border:1px solid black;
+    }
+    </style>
+<body>
+    
+    <label>How meny Kwhs:</label>
+    <input type="text" id="Kwhs-txt" name="Kwhs" value="256"><br><br>
+    
+    <table style="width:100%">
+        <tr>
+          <th>1 - 31</th>
+          <th>32 - 62</th>
+          <th>63 - 93</th>
+          <th>94 - 124</th>
+          <th>125 - 186</th>
+          <th>186 - 270</th>
+        </tr>
+        <tr>
+          <td>31</td>
+          <td>31</td>
+          <td>31</td>
+          <td>31</td>
+          <td>62</td>
+          <td>84</td>
+        </tr>
+        <tr>
+          <td id="1box-td" value = "@"></td>
+          <td id="2box-td"></td>
+          <td id="3box-td"></td>
+          <td id="4box-td"></td>
+          <td id="5box-td"></td>
+          <td id="6box-td"></td>
+        </tr>
+      </table>
+
+    <button id="Calculate-btn" onclick="CalculateBillValue()">Calculate</button><br><br>
+
+    <label id="fixedCost-lbl">Fiex Cost: 540</label><br><br>
+    <label id="billValue-lbl">000</label>
+    
+    
+      
+    <script src ="index.js"></script>
+</body>
+</html>
